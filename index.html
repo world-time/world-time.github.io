@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries and Time Zones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .continent {
+            margin: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .continent h2 {
+            color: #4CAF50;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        .country-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .country-item {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .country-name {
+            font-weight: bold;
+        }
+        .time, .timezone {
+            color: #555;
+        }
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Countries and Time Zones</h1>
+</header>
+
+<div class="continent">
+    <h2>Africa</h2>
+    <ul class="country-list">
+        <li class="country-item" id="nigeria">
+            <span class="country-name">Nigeria</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">WAT (West Africa Time)</span>
+        </li>
+        <li class="country-item" id="south-africa">
+            <span class="country-name">South Africa</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">SAST (South Africa Standard Time)</span>
+        </li>
+        <li class="country-item" id="egypt">
+            <span class="country-name">Egypt</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">EET (Eastern European Time)</span>
+        </li>
+        <li class="country-item" id="kenya">
+            <span class="country-name">Kenya</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">EAT (East Africa Time)</span>
+        </li>
+        <li class="country-item" id="ethiopia">
+            <span class="country-name">Ethiopia</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">EAT (East Africa Time)</span>
+        </li>
+    </ul>
+</div>
+
+<div class="continent">
+    <h2>Asia</h2>
+    <ul class="country-list">
+        <li class="country-item" id="china">
+            <span class="country-name">China</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">CST (China Standard Time)</span>
+        </li>
+        <li class="country-item" id="india">
+            <span class="country-name">India</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">IST (Indian Standard Time)</span>
+        </li>
+        <li class="country-item" id="japan">
+            <span class="country-name">Japan</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">JST (Japan Standard Time)</span>
+        </li>
+        <li class="country-item" id="south-korea">
+            <span class="country-name">South Korea</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">KST (Korea Standard Time)</span>
+        </li>
+        <li class="country-item" id="indonesia">
+            <span class="country-name">Indonesia</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">WIB (Western Indonesia Time)</span>
+        </li>
+    </ul>
+</div>
+
+<div class="continent">
+    <h2>Europe</h2>
+    <ul class="country-list">
+        <li class="country-item" id="germany">
+            <span class="country-name">Germany</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">CET (Central European Time)</span>
+        </li>
+        <li class="country-item" id="france">
+            <span class="country-name">France</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">CET (Central European Time)</span>
+        </li>
+    </ul>
+</div>
+
+<div class="continent">
+    <h2>North America</h2>
+    <ul class="country-list">
+        <li class="country-item" id="usa">
+            <span class="country-name">United States</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">EST (Eastern Standard Time)</span>
+        </li>
+        <li class="country-item" id="canada">
+            <span class="country-name">Canada</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">EST (Eastern Standard Time)</span>
+        </li>
+    </ul>
+</div>
+
+<div class="continent">
+    <h2>South America</h2>
+    <ul class="country-list">
+        <li class="country-item" id="brazil">
+            <span class="country-name">Brazil</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">BRT (Brasília Time)</span>
+        </li>
+        <li class="country-item" id="argentina">
+            <span class="country-name">Argentina</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">ART (Argentina Time)</span>
+        </li>
+    </ul>
+</div>
+
+<div class="continent">
+    <h2>Oceania</h2>
+    <ul class="country-list">
+        <li class="country-item" id="australia">
+            <span class="country-name">Australia</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">AEST (Australian Eastern Standard Time)</span>
+        </li>
+        <li class="country-item" id="new-zealand">
+            <span class="country-name">New Zealand</span>
+            <span class="time">Loading...</span>
+            <span class="timezone">NZST (New Zealand Standard Time)</span>
+        </li>
+    </ul>
+</div>
+
+<div class="footer">
+    <p>Aditya Pratap Bhuyan | All rights reserved.</p>
+</div>
+
+<script>
+    const countriesTimeZones = {
+        nigeria: 'Africa/Lagos',
+        'south-africa': 'Africa/Johannesburg',
+        egypt: 'Africa/Cairo',
+        kenya: 'Africa/Nairobi',
+        ethiopia: 'Africa/Addis_Ababa',
+        china: 'Asia/Shanghai',
+        india: 'Asia/Kolkata',
+        japan: 'Asia/Tokyo',
+        'south-korea': 'Asia/Seoul',
+        indonesia: 'Asia/Jakarta',
+        germany: 'Europe/Berlin',
+        france: 'Europe/Paris',
+        usa: 'America/New_York',
+        canada: 'America/Toronto',
+        brazil: 'America/Sao_Paulo',
+        argentina: 'America/Argentina/Buenos_Aires',
+        australia: 'Australia/Sydney',
+        'new-zealand': 'Pacific/Auckland'
+    };
+
+    function updateTime(countryId, timeZone) {
+        const now = new Date().toLocaleString('en-US', { timeZone });
+        document.querySelector(`#${countryId} .time`).textContent = now;
+    }
+
+    // Function to update all the countries' time
+    function updateAllTimes() {
+        for (let countryId in countriesTimeZones) {
+            updateTime(countryId, countriesTimeZones[countryId]);
+        }
+    }
+
+    // Initial time update
+    updateAllTimes();
+
+    // Update time every 60 seconds (60000 ms)
+    setInterval(updateAllTimes, 60000);
+</script>
+
+</body>
+</html>
