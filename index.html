@@ -3,242 +3,230 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countries and Time Zones</title>
+    <title>World Clocks by Continent</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            color: #444;
         }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 0;
+        h1, h2 {
             text-align: center;
+            color: #ffffff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
         h1 {
-            margin: 0;
+            margin: 20px 0;
+            font-size: 2.5em;
         }
         .continent {
-            margin: 20px;
-            background-color: #ffffff;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            background: linear-gradient(to bottom, #ffecd2, #fcb69f);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 900px;
         }
         .continent h2 {
-            color: #4CAF50;
-            text-transform: uppercase;
-            margin-bottom: 10px;
+            font-size: 1.8em;
+            margin-bottom: 20px;
         }
-        .country-list {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .country-item {
-            background-color: #f9f9f9;
-            padding: 10px;
-            margin: 5px 0;
-            border-radius: 4px;
+        .country {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            background: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .country-name {
-            font-weight: bold;
+        .country:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
-        .time, .timezone {
+        .country h3 {
+            font-size: 1.5em;
+            margin: 0;
+            color: #ff5722;
+        }
+        .country p {
+            margin: 5px 0;
             color: #555;
         }
-        .footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        .clock {
+            font-weight: bold;
+            color: #673ab7;
+            background: #f3e5f5;
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
+    <h1>World Clocks by Continent</h1>
 
-<header>
-    <h1>Countries and Time Zones</h1>
-</header>
+    <!-- Asia -->
+    <div class="continent">
+        <h2>Asia</h2>
+        <div class="country">
+            <h3>India</h3>
+            <p>Capital: New Delhi</p>
+            <p>Time: <span class="clock" data-timezone="Asia/Kolkata"></span></p>
+        </div>
+        <div class="country">
+            <h3>China</h3>
+            <p>Capital: Beijing</p>
+            <p>Time: <span class="clock" data-timezone="Asia/Shanghai"></span></p>
+        </div>
+        <div class="country">
+            <h3>Japan</h3>
+            <p>Capital: Tokyo</p>
+            <p>Time: <span class="clock" data-timezone="Asia/Tokyo"></span></p>
+        </div>
+        <div class="country">
+            <h3>Saudi Arabia</h3>
+            <p>Capital: Riyadh</p>
+            <p>Time: <span class="clock" data-timezone="Asia/Riyadh"></span></p>
+        </div>
+        <div class="country">
+            <h3>South Korea</h3>
+            <p>Capital: Seoul</p>
+            <p>Time: <span class="clock" data-timezone="Asia/Seoul"></span></p>
+        </div>
+    </div>
 
-<div class="continent">
-    <h2>Africa</h2>
-    <ul class="country-list">
-        <li class="country-item" id="nigeria">
-            <span class="country-name">Nigeria</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">WAT (West Africa Time)</span>
-        </li>
-        <li class="country-item" id="south-africa">
-            <span class="country-name">South Africa</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">SAST (South Africa Standard Time)</span>
-        </li>
-        <li class="country-item" id="egypt">
-            <span class="country-name">Egypt</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">EET (Eastern European Time)</span>
-        </li>
-        <li class="country-item" id="kenya">
-            <span class="country-name">Kenya</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">EAT (East Africa Time)</span>
-        </li>
-        <li class="country-item" id="ethiopia">
-            <span class="country-name">Ethiopia</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">EAT (East Africa Time)</span>
-        </li>
-    </ul>
-</div>
+    <!-- Africa -->
+    <div class="continent">
+        <h2>Africa</h2>
+        <div class="country">
+            <h3>South Africa</h3>
+            <p>Capital: Pretoria</p>
+            <p>Time: <span class="clock" data-timezone="Africa/Johannesburg"></span></p>
+        </div>
+        <div class="country">
+            <h3>Egypt</h3>
+            <p>Capital: Cairo</p>
+            <p>Time: <span class="clock" data-timezone="Africa/Cairo"></span></p>
+        </div>
+        <div class="country">
+            <h3>Nigeria</h3>
+            <p>Capital: Abuja</p>
+            <p>Time: <span class="clock" data-timezone="Africa/Lagos"></span></p>
+        </div>
+        <div class="country">
+            <h3>Kenya</h3>
+            <p>Capital: Nairobi</p>
+            <p>Time: <span class="clock" data-timezone="Africa/Nairobi"></span></p>
+        </div>
+        <div class="country">
+            <h3>Morocco</h3>
+            <p>Capital: Rabat</p>
+            <p>Time: <span class="clock" data-timezone="Africa/Casablanca"></span></p>
+        </div>
+    </div>
 
-<div class="continent">
-    <h2>Asia</h2>
-    <ul class="country-list">
-        <li class="country-item" id="china">
-            <span class="country-name">China</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">CST (China Standard Time)</span>
-        </li>
-        <li class="country-item" id="india">
-            <span class="country-name">India</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">IST (Indian Standard Time)</span>
-        </li>
-        <li class="country-item" id="japan">
-            <span class="country-name">Japan</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">JST (Japan Standard Time)</span>
-        </li>
-        <li class="country-item" id="south-korea">
-            <span class="country-name">South Korea</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">KST (Korea Standard Time)</span>
-        </li>
-        <li class="country-item" id="indonesia">
-            <span class="country-name">Indonesia</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">WIB (Western Indonesia Time)</span>
-        </li>
-    </ul>
-</div>
+    <!-- Europe -->
+    <div class="continent">
+        <h2>Europe</h2>
+        <div class="country">
+            <h3>Germany</h3>
+            <p>Capital: Berlin</p>
+            <p>Time: <span class="clock" data-timezone="Europe/Berlin"></span></p>
+        </div>
+        <div class="country">
+            <h3>United Kingdom</h3>
+            <p>Capital: London</p>
+            <p>Time: <span class="clock" data-timezone="Europe/London"></span></p>
+        </div>
+        <div class="country">
+            <h3>France</h3>
+            <p>Capital: Paris</p>
+            <p>Time: <span class="clock" data-timezone="Europe/Paris"></span></p>
+        </div>
+    </div>
 
-<div class="continent">
-    <h2>Europe</h2>
-    <ul class="country-list">
-        <li class="country-item" id="germany">
-            <span class="country-name">Germany</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">CET (Central European Time)</span>
-        </li>
-        <li class="country-item" id="france">
-            <span class="country-name">France</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">CET (Central European Time)</span>
-        </li>
-    </ul>
-</div>
+    <!-- North America -->
+    <div class="continent">
+        <h2>North America</h2>
+        <div class="country">
+            <h3>United States</h3>
+            <p>Capital: Washington, D.C.</p>
+            <p>Time: <span class="clock" data-timezone="America/New_York"></span></p>
+        </div>
+        <div class="country">
+            <h3>Canada</h3>
+            <p>Capital: Ottawa</p>
+            <p>Time: <span class="clock" data-timezone="America/Toronto"></span></p>
+        </div>
+        <div class="country">
+            <h3>Mexico</h3>
+            <p>Capital: Mexico City</p>
+            <p>Time: <span class="clock" data-timezone="America/Mexico_City"></span></p>
+        </div>
+    </div>
 
-<div class="continent">
-    <h2>North America</h2>
-    <ul class="country-list">
-        <li class="country-item" id="usa">
-            <span class="country-name">United States</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">EST (Eastern Standard Time)</span>
-        </li>
-        <li class="country-item" id="canada">
-            <span class="country-name">Canada</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">EST (Eastern Standard Time)</span>
-        </li>
-    </ul>
-</div>
+    <!-- South America -->
+    <div class="continent">
+        <h2>South America</h2>
+        <div class="country">
+            <h3>Brazil</h3>
+            <p>Capital: Brasília</p>
+            <p>Time: <span class="clock" data-timezone="America/Sao_Paulo"></span></p>
+        </div>
+        <div class="country">
+            <h3>Argentina</h3>
+            <p>Capital: Buenos Aires</p>
+            <p>Time: <span class="clock" data-timezone="America/Argentina/Buenos_Aires"></span></p>
+        </div>
+        <div class="country">
+            <h3>Chile</h3>
+            <p>Capital: Santiago</p>
+            <p>Time: <span class="clock" data-timezone="America/Santiago"></span></p>
+        </div>
+    </div>
 
-<div class="continent">
-    <h2>South America</h2>
-    <ul class="country-list">
-        <li class="country-item" id="brazil">
-            <span class="country-name">Brazil</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">BRT (Brasília Time)</span>
-        </li>
-        <li class="country-item" id="argentina">
-            <span class="country-name">Argentina</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">ART (Argentina Time)</span>
-        </li>
-    </ul>
-</div>
+    <!-- Australia/Oceania -->
+    <div class="continent">
+        <h2>Australia/Oceania</h2>
+        <div class="country">
+            <h3>Australia</h3>
+            <p>Capital: Canberra</p>
+            <p>Time: <span class="clock" data-timezone="Australia/Sydney"></span></p>
+        </div>
+        <div class="country">
+            <h3>New Zealand</h3>
+            <p>Capital: Wellington</p>
+            <p>Time: <span class="clock" data-timezone="Pacific/Auckland"></span></p>
+        </div>
+        <div class="country">
+            <h3>Fiji</h3>
+            <p>Capital: Suva</p>
+            <p>Time: <span class="clock" data-timezone="Pacific/Fiji"></span></p>
+        </div>
+    </div>
 
-<div class="continent">
-    <h2>Oceania</h2>
-    <ul class="country-list">
-        <li class="country-item" id="australia">
-            <span class="country-name">Australia</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">AEST (Australian Eastern Standard Time)</span>
-        </li>
-        <li class="country-item" id="new-zealand">
-            <span class="country-name">New Zealand</span>
-            <span class="time">Loading...</span>
-            <span class="timezone">NZST (New Zealand Standard Time)</span>
-        </li>
-    </ul>
-</div>
-
-<div class="footer">
-    <p>Aditya Pratap Bhuyan | All rights reserved.</p>
-</div>
-
-<script>
-    const countriesTimeZones = {
-        nigeria: 'Africa/Lagos',
-        'south-africa': 'Africa/Johannesburg',
-        egypt: 'Africa/Cairo',
-        kenya: 'Africa/Nairobi',
-        ethiopia: 'Africa/Addis_Ababa',
-        china: 'Asia/Shanghai',
-        india: 'Asia/Kolkata',
-        japan: 'Asia/Tokyo',
-        'south-korea': 'Asia/Seoul',
-        indonesia: 'Asia/Jakarta',
-        germany: 'Europe/Berlin',
-        france: 'Europe/Paris',
-        usa: 'America/New_York',
-        canada: 'America/Toronto',
-        brazil: 'America/Sao_Paulo',
-        argentina: 'America/Argentina/Buenos_Aires',
-        australia: 'Australia/Sydney',
-        'new-zealand': 'Pacific/Auckland'
-    };
-
-    function updateTime(countryId, timeZone) {
-        const now = new Date().toLocaleString('en-US', { timeZone });
-        document.querySelector(`#${countryId} .time`).textContent = now;
-    }
-
-    // Function to update all the countries' time
-    function updateAllTimes() {
-        for (let countryId in countriesTimeZones) {
-            updateTime(countryId, countriesTimeZones[countryId]);
+    <script>
+        function updateClocks() {
+            const clocks = document.querySelectorAll('.clock');
+            clocks.forEach(clock => {
+                const timezone = clock.getAttribute('data-timezone');
+                const time = new Date().toLocaleTimeString('en-US', { timeZone: timezone });
+                clock.textContent = time;
+            });
         }
-    }
-
-    // Initial time update
-    updateAllTimes();
-
-    // Update time every 60 seconds (60000 ms)
-    setInterval(updateAllTimes, 60000);
-</script>
-
+        setInterval(updateClocks, 1000);
+        updateClocks();
+    </script>
+    <footer style="text-align: center; padding: 20px; background: #333; color: #fff; font-size: 1em; margin-top: 20px;">
+        Designed and Maintained by 
+        <a href="https://linkedin.com/in/adityabhuyan" target="_blank" style="color: #4CAF50; text-decoration: none;">
+            Aditya Pratap Bhuyan
+        </a>
+    </footer>
 </body>
 </html>
