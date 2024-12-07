@@ -9,7 +9,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #a8edea, #fed6e3);
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
             color: #444;
         }
         h1, h2 {
@@ -25,25 +25,32 @@
             margin: 20px auto;
             padding: 20px;
             border-radius: 12px;
-            background: linear-gradient(to bottom, #ffecd2, #fcb69f);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 900px;
+            background: #ffffff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .continent:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
         }
         .continent h2 {
             font-size: 1.8em;
             margin-bottom: 20px;
+            color: #2c3e50;
         }
         .country {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
-            background: #fff;
+            background: #f9f9f9;
             border-radius: 10px;
             padding: 15px;
             margin: 10px 0;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s, box-shadow 0.3s;
+            width: 85%;
         }
         .country:hover {
             transform: translateY(-5px);
@@ -52,7 +59,7 @@
         .country h3 {
             font-size: 1.5em;
             margin: 0;
-            color: #ff5722;
+            color: #3498db;
         }
         .country p {
             margin: 5px 0;
@@ -60,8 +67,8 @@
         }
         .clock {
             font-weight: bold;
-            color: #673ab7;
-            background: #f3e5f5;
+            color: #8e44ad;
+            background: #f1c40f;
             padding: 5px 10px;
             border-radius: 5px;
         }
@@ -86,162 +93,961 @@
     <div class="continent">
         <h2>Asia</h2>
         <div class="country">
-            <h3>India</h3>
-            <p>Capital: New Delhi</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Kolkata"></span></p>
-        </div>
-        <div class="country">
-            <h3>China</h3>
-            <p>Capital: Beijing</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Shanghai"></span></p>
-        </div>
-        <div class="country">
-            <h3>Japan</h3>
-            <p>Capital: Tokyo</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Tokyo"></span></p>
-        </div>
-        <div class="country">
-            <h3>Saudi Arabia</h3>
-            <p>Capital: Riyadh</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Riyadh"></span></p>
-        </div>
-        <div class="country">
-            <h3>South Korea</h3>
-            <p>Capital: Seoul</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Seoul"></span></p>
-        </div>
-        <div class="country">
-            <h3>Indonesia</h3>
-            <p>Capital: Jakarta</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Jakarta"></span></p>
-        </div>
-        <div class="country">
-            <h3>Vietnam</h3>
-            <p>Capital: Hanoi</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Ho_Chi_Minh"></span></p>
-        </div>
-        <div class="country">
-            <h3>Turkey</h3>
-            <p>Capital: Ankara</p>
-            <p>Time: <span class="clock" data-timezone="Europe/Istanbul"></span></p>
-        </div>
-        <div class="country">
-            <h3>Israel</h3>
-            <p>Capital: Jerusalem</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Jerusalem"></span></p>
-        </div>
-        <div class="country">
-            <h3>Philippines</h3>
-            <p>Capital: Manila</p>
-            <p>Time: <span class="clock" data-timezone="Asia/Manila"></span></p>
-        </div>
-        <div class="country">
-    <h3>Sri Lanka</h3>
-    <p>Capital: Colombo</p>
-    <p>Time: <span class="clock" data-timezone="Asia/Colombo"></span></p>
-</div>
-<div class="country">
-    <h3>Bangladesh</h3>
-    <p>Capital: Dhaka</p>
-    <p>Time: <span class="clock" data-timezone="Asia/Dhaka"></span></p>
-</div>
-
+        <h3>Afghanistan</h3>
+        <p>Capital: Kabul</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Kabul"></span></p>
+    </div>
+    <div class="country">
+        <h3>Armenia</h3>
+        <p>Capital: Yerevan</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Yerevan"></span></p>
+    </div>
+    <div class="country">
+        <h3>Azerbaijan</h3>
+        <p>Capital: Baku</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Baku"></span></p>
+    </div>
+    <div class="country">
+        <h3>Bahrain</h3>
+        <p>Capital: Manama</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Bahrain"></span></p>
+    </div>
+    <div class="country">
+        <h3>Bangladesh</h3>
+        <p>Capital: Dhaka</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Dhaka"></span></p>
+    </div>
+    <div class="country">
+        <h3>Bhutan</h3>
+        <p>Capital: Thimphu</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Thimphu"></span></p>
+    </div>
+    <div class="country">
+        <h3>Brunei</h3>
+        <p>Capital: Bandar Seri Begawan</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Brunei"></span></p>
+    </div>
+    <div class="country">
+        <h3>Cambodia</h3>
+        <p>Capital: Phnom Penh</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Phnom_Penh"></span></p>
+    </div>
+    <div class="country">
+        <h3>China</h3>
+        <p>Capital: Beijing</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Shanghai"></span></p>
+    </div>
+    <div class="country">
+        <h3>Cyprus</h3>
+        <p>Capital: Nicosia</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Nicosia"></span></p>
+    </div>
+    <div class="country">
+        <h3>Georgia</h3>
+        <p>Capital: Tbilisi</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Tbilisi"></span></p>
+    </div>
+    <div class="country">
+        <h3>India</h3>
+        <p>Capital: New Delhi</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Kolkata"></span></p>
+    </div>
+    <div class="country">
+        <h3>Indonesia</h3>
+        <p>Capital: Jakarta</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Jakarta"></span></p>
+    </div>
+    <div class="country">
+        <h3>Iran</h3>
+        <p>Capital: Tehran</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Tehran"></span></p>
+    </div>
+    <div class="country">
+        <h3>Iraq</h3>
+        <p>Capital: Baghdad</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Baghdad"></span></p>
+    </div>
+    <div class="country">
+        <h3>Israel</h3>
+        <p>Capital: Jerusalem</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Jerusalem"></span></p>
+    </div>
+    <div class="country">
+        <h3>Japan</h3>
+        <p>Capital: Tokyo</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Tokyo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Jordan</h3>
+        <p>Capital: Amman</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Amman"></span></p>
+    </div>
+    <div class="country">
+        <h3>Kazakhstan</h3>
+        <p>Capital: Astana</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Almaty"></span></p>
+    </div>
+    <div class="country">
+        <h3>Kuwait</h3>
+        <p>Capital: Kuwait City</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Kuwait"></span></p>
+    </div>
+    <div class="country">
+        <h3>Kyrgyzstan</h3>
+        <p>Capital: Bishkek</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Bishkek"></span></p>
+    </div>
+    <div class="country">
+        <h3>Laos</h3>
+        <p>Capital: Vientiane</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Vientiane"></span></p>
+    </div>
+    <div class="country">
+        <h3>Lebanon</h3>
+        <p>Capital: Beirut</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Beirut"></span></p>
+    </div>
+    <div class="country">
+        <h3>Malaysia</h3>
+        <p>Capital: Kuala Lumpur</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Kuala_Lumpur"></span></p>
+    </div>
+    <div class="country">
+        <h3>Maldives</h3>
+        <p>Capital: Malé</p>
+        <p>Time: <span class="clock" data-timezone="Indian/Maldives"></span></p>
+    </div>
+    <div class="country">
+        <h3>Mongolia</h3>
+        <p>Capital: Ulaanbaatar</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Ulaanbaatar"></span></p>
+    </div>
+    <div class="country">
+        <h3>Myanmar (Burma)</h3>
+        <p>Capital: Naypyidaw</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Yangon"></span></p>
+    </div>
+    <div class="country">
+        <h3>Nepal</h3>
+        <p>Capital: Kathmandu</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Kathmandu"></span></p>
+    </div>
+    <div class="country">
+        <h3>North Korea</h3>
+        <p>Capital: Pyongyang</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Pyongyang"></span></p>
+    </div>
+    <div class="country">
+        <h3>Oman</h3>
+        <p>Capital: Muscat</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Muscat"></span></p>
+    </div>
+    <div class="country">
+        <h3>Pakistan</h3>
+        <p>Capital: Islamabad</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Karachi"></span></p>
+    </div>
+    <div class="country">
+        <h3>Palestine</h3>
+        <p>Capital: Jerusalem</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Gaza"></span></p>
+    </div>
+    <div class="country">
+        <h3>Philippines</h3>
+        <p>Capital: Manila</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Manila"></span></p>
+    </div>
+    <div class="country">
+        <h3>Qatar</h3>
+        <p>Capital: Doha</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Qatar"></span></p>
+    </div>
+    <div class="country">
+        <h3>Russia</h3>
+        <p>Capital: Moscow</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Moscow"></span></p>
+    </div>
+    <div class="country">
+        <h3>Saudi Arabia</h3>
+        <p>Capital: Riyadh</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Riyadh"></span></p>
+    </div>
+    <div class="country">
+        <h3>Singapore</h3>
+        <p>Capital: Singapore</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Singapore"></span></p>
+    </div>
+    <div class="country">
+        <h3>South Korea</h3>
+        <p>Capital: Seoul</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Seoul"></span></p>
+    </div>
+    <div class="country">
+        <h3>Sri Lanka</h3>
+        <p>Capital: Colombo</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Colombo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Syria</h3>
+        <p>Capital: Damascus</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Damascus"></span></p>
+    </div>
+    <div class="country">
+        <h3>Taiwan</h3>
+        <p>Capital: Taipei</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Taipei"></span></p>
+    </div>
+    <div class="country">
+        <h3>Tajikistan</h3>
+        <p>Capital: Dushanbe</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Dushanbe"></span></p>
+    </div>
+    <div class="country">
+        <h3>Thailand</h3>
+        <p>Capital: Bangkok</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Bangkok"></span></p>
+    </div>
+    <div class="country">
+        <h3>Timor-Leste</h3>
+        <p>Capital: Dili</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Dili"></span></p>
+    </div>
+    <div class="country">
+        <h3>Turkey</h3>
+        <p>Capital: Ankara</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Istanbul"></span></p>
+    </div>
+    <div class="country">
+        <h3>Turkmenistan</h3>
+        <p>Capital: Ashgabat</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Ashgabat"></span></p>
+    </div>
+    <div class="country">
+        <h3>United Arab Emirates</h3>
+        <p>Capital: Abu Dhabi</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Dubai"></span></p>
+    </div>
+    <div class="country">
+        <h3>Uzbekistan</h3>
+        <p>Capital: Tashkent</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Tashkent"></span></p>
+    </div>
+    <div class="country">
+        <h3>Vietnam</h3>
+        <p>Capital: Hanoi</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Ho_Chi_Minh"></span></p>
+    </div>
+    <div class="country">
+        <h3>Yemen</h3>
+        <p>Capital: Sana'a</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Aden"></span></p>
+    </div>
     </div>
 
     <!-- Africa -->
     <div class="continent">
         <h2>Africa</h2>
         <div class="country">
-            <h3>South Africa</h3>
-            <p>Capital: Pretoria</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Johannesburg"></span></p>
-        </div>
-        <div class="country">
-            <h3>Egypt</h3>
-            <p>Capital: Cairo</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Cairo"></span></p>
-        </div>
-        <div class="country">
-            <h3>Nigeria</h3>
-            <p>Capital: Abuja</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Lagos"></span></p>
-        </div>
-        <div class="country">
-            <h3>Kenya</h3>
-            <p>Capital: Nairobi</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Nairobi"></span></p>
-        </div>
-        <div class="country">
-            <h3>Morocco</h3>
-            <p>Capital: Rabat</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Casablanca"></span></p>
-        </div>
-        <div class="country">
-            <h3>Algeria</h3>
-            <p>Capital: Algiers</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Algiers"></span></p>
-        </div>
-        <div class="country">
-            <h3>Ghana</h3>
-            <p>Capital: Accra</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Accra"></span></p>
-        </div>
-        <div class="country">
-            <h3>Ethiopia</h3>
-            <p>Capital: Addis Ababa</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Addis_Ababa"></span></p>
-        </div>
-        <div class="country">
-            <h3>Tanzania</h3>
-            <p>Capital: Dodoma</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Dar_es_Salaam"></span></p>
-        </div>
-        <div class="country">
-            <h3>Angola</h3>
-            <p>Capital: Luanda</p>
-            <p>Time: <span class="clock" data-timezone="Africa/Luanda"></span></p>
-        </div>
+        <h3>Algeria</h3>
+        <p>Capital: Algiers</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Algiers"></span></p>
+    </div>
+    <div class="country">
+        <h3>Angola</h3>
+        <p>Capital: Luanda</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Luanda"></span></p>
+    </div>
+    <div class="country">
+        <h3>Benin</h3>
+        <p>Capital: Porto-Novo</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Porto-Novo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Botswana</h3>
+        <p>Capital: Gaborone</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Gaborone"></span></p>
+    </div>
+    <div class="country">
+        <h3>Burkina Faso</h3>
+        <p>Capital: Ouagadougou</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Ouagadougou"></span></p>
+    </div>
+    <div class="country">
+        <h3>Burundi</h3>
+        <p>Capital: Gitega</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Bujumbura"></span></p>
+    </div>
+    <div class="country">
+        <h3>Cabo Verde</h3>
+        <p>Capital: Praia</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Praia"></span></p>
+    </div>
+    <div class="country">
+        <h3>Cameroon</h3>
+        <p>Capital: Yaoundé</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Douala"></span></p>
+    </div>
+    <div class="country">
+        <h3>Central African Republic</h3>
+        <p>Capital: Bangui</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Bangui"></span></p>
+    </div>
+    <div class="country">
+        <h3>Chad</h3>
+        <p>Capital: N'Djamena</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Ndjamena"></span></p>
+    </div>
+    <div class="country">
+        <h3>Comoros</h3>
+        <p>Capital: Moroni</p>
+        <p>Time: <span class="clock" data-timezone="Indian/Comoros"></span></p>
+    </div>
+    <div class="country">
+        <h3>Congo (Congo-Brazzaville)</h3>
+        <p>Capital: Brazzaville</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Brazzaville"></span></p>
+    </div>
+    <div class="country">
+        <h3>Congo (Democratic Republic)</h3>
+        <p>Capital: Kinshasa</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Kinshasa"></span></p>
+    </div>
+    <div class="country">
+        <h3>Djibouti</h3>
+        <p>Capital: Djibouti</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Djibouti"></span></p>
+    </div>
+    <div class="country">
+        <h3>Egypt</h3>
+        <p>Capital: Cairo</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Cairo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Equatorial Guinea</h3>
+        <p>Capital: Malabo</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Malabo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Eritrea</h3>
+        <p>Capital: Asmara</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Asmara"></span></p>
+    </div>
+    <div class="country">
+        <h3>Ethiopia</h3>
+        <p>Capital: Addis Ababa</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Addis_Ababa"></span></p>
+    </div>
+    <div class="country">
+        <h3>Gabon</h3>
+        <p>Capital: Libreville</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Libreville"></span></p>
+    </div>
+    <div class="country">
+        <h3>Gambia</h3>
+        <p>Capital: Banjul</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Banjul"></span></p>
+    </div>
+    <div class="country">
+        <h3>Ghana</h3>
+        <p>Capital: Accra</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Accra"></span></p>
+    </div>
+    <div class="country">
+        <h3>Guinea</h3>
+        <p>Capital: Conakry</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Conakry"></span></p>
+    </div>
+    <div class="country">
+        <h3>Guinea-Bissau</h3>
+        <p>Capital: Bissau</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Bissau"></span></p>
+    </div>
+    <div class="country">
+        <h3>Ivory Coast</h3>
+        <p>Capital: Yamoussoukro</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Abidjan"></span></p>
+    </div>
+    <div class="country">
+        <h3>Kenya</h3>
+        <p>Capital: Nairobi</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Nairobi"></span></p>
+    </div>
+    <div class="country">
+        <h3>Lesotho</h3>
+        <p>Capital: Maseru</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Maseru"></span></p>
+    </div>
+    <div class="country">
+        <h3>Liberia</h3>
+        <p>Capital: Monrovia</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Monrovia"></span></p>
+    </div>
+    <div class="country">
+        <h3>Libya</h3>
+        <p>Capital: Tripoli</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Tripoli"></span></p>
+    </div>
+    <div class="country">
+        <h3>Madagascar</h3>
+        <p>Capital: Antananarivo</p>
+        <p>Time: <span class="clock" data-timezone="Indian/Antananarivo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Malawi</h3>
+        <p>Capital: Lilongwe</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Lilongwe"></span></p>
+    </div>
+    <div class="country">
+        <h3>Mali</h3>
+        <p>Capital: Bamako</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Bamako"></span></p>
+    </div>
+    <div class="country">
+        <h3>Mauritania</h3>
+        <p>Capital: Nouakchott</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Nouakchott"></span></p>
+    </div>
+    <div class="country">
+        <h3>Mauritius</h3>
+        <p>Capital: Port Louis</p>
+        <p>Time: <span class="clock" data-timezone="Indian/Mauritius"></span></p>
+    </div>
+    <div class="country">
+        <h3>Morocco</h3>
+        <p>Capital: Rabat</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Casablanca"></span></p>
+    </div>
+    <div class="country">
+        <h3>Mozambique</h3>
+        <p>Capital: Maputo</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Maputo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Namibia</h3>
+        <p>Capital: Windhoek</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Windhoek"></span></p>
+    </div>
+    <div class="country">
+        <h3>Niger</h3>
+        <p>Capital: Niamey</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Niamey"></span></p>
+    </div>
+    <div class="country">
+        <h3>Nigeria</h3>
+        <p>Capital: Abuja</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Lagos"></span></p>
+    </div>
+    <div class="country">
+        <h3>Rwanda</h3>
+        <p>Capital: Kigali</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Kigali"></span></p>
+    </div>
+    <div class="country">
+        <h3>Sao Tome and Principe</h3>
+        <p>Capital: São Tomé</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Sao_Tome"></span></p>
+    </div>
+    <div class="country">
+        <h3>Senegal</h3>
+        <p>Capital: Dakar</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Dakar"></span></p>
+    </div>
+    <div class="country">
+        <h3>Seychelles</h3>
+        <p>Capital: Victoria</p>
+        <p>Time: <span class="clock" data-timezone="Indian/Mahe"></span></p>
+    </div>
+    <div class="country">
+        <h3>Sierra Leone</h3>
+        <p>Capital: Freetown</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Freetown"></span></p>
+    </div>
+    <div class="country">
+        <h3>Somalia</h3>
+        <p>Capital: Mogadishu</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Mogadishu"></span></p>
+    </div>
+    <div class="country">
+        <h3>South Africa</h3>
+        <p>Capital: Pretoria</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Johannesburg"></span></p>
+    </div>
+    <div class="country">
+        <h3>South Sudan</h3>
+        <p>Capital: Juba</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Juba"></span></p>
+    </div>
+    <div class="country">
+        <h3>Sudan</h3>
+        <p>Capital: Khartoum</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Khartoum"></span></p>
+    </div>
+    <div class="country">
+        <h3>Togo</h3>
+        <p>Capital: Lomé</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Lome"></span></p>
+    </div>
+    <div class="country">
+        <h3>Tunisia</h3>
+        <p>Capital: Tunis</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Tunis"></span></p>
+    </div>
+    <div class="country">
+        <h3>Uganda</h3>
+        <p>Capital: Kampala</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Kampala"></span></p>
+    </div>
+    <div class="country">
+        <h3>Zambia</h3>
+        <p>Capital: Lusaka</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Lusaka"></span></p>
+    </div>
+    <div class="country">
+        <h3>Zimbabwe</h3>
+        <p>Capital: Harare</p>
+        <p>Time: <span class="clock" data-timezone="Africa/Harare"></span></p>
+    </div>
     </div>
 
-    
+    <!-- Europe -->
+    <div class="continent">
+        <h2>Europe</h2>
+        
+        <div class="country">
+        <h3>Albania</h3>
+        <p>Capital: Tirana</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Tirane"></span></p>
+    </div>
+    <div class="country">
+        <h3>Andorra</h3>
+        <p>Capital: Andorra la Vella</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Andorra"></span></p>
+    </div>
+    <div class="country">
+        <h3>Armenia</h3>
+        <p>Capital: Yerevan</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Yerevan"></span></p>
+    </div>
+    <div class="country">
+        <h3>Austria</h3>
+        <p>Capital: Vienna</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Vienna"></span></p>
+    </div>
+    <div class="country">
+        <h3>Azerbaijan</h3>
+        <p>Capital: Baku</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Baku"></span></p>
+    </div>
+    <div class="country">
+        <h3>Belarus</h3>
+        <p>Capital: Minsk</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Minsk"></span></p>
+    </div>
+    <div class="country">
+        <h3>Belgium</h3>
+        <p>Capital: Brussels</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Brussels"></span></p>
+    </div>
+    <div class="country">
+        <h3>Bosnia and Herzegovina</h3>
+        <p>Capital: Sarajevo</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Sarajevo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Bulgaria</h3>
+        <p>Capital: Sofia</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Sofia"></span></p>
+    </div>
+    <div class="country">
+        <h3>Croatia</h3>
+        <p>Capital: Zagreb</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Zagreb"></span></p>
+    </div>
+    <div class="country">
+        <h3>Cyprus</h3>
+        <p>Capital: Nicosia</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Nicosia"></span></p>
+    </div>
+    <div class="country">
+        <h3>Czech Republic</h3>
+        <p>Capital: Prague</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Prague"></span></p>
+    </div>
+    <div class="country">
+        <h3>Denmark</h3>
+        <p>Capital: Copenhagen</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Copenhagen"></span></p>
+    </div>
+    <div class="country">
+        <h3>Estonia</h3>
+        <p>Capital: Tallinn</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Tallinn"></span></p>
+    </div>
+    <div class="country">
+        <h3>Finland</h3>
+        <p>Capital: Helsinki</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Helsinki"></span></p>
+    </div>
+    <div class="country">
+        <h3>France</h3>
+        <p>Capital: Paris</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Paris"></span></p>
+    </div>
+    <div class="country">
+        <h3>Georgia</h3>
+        <p>Capital: Tbilisi</p>
+        <p>Time: <span class="clock" data-timezone="Asia/Tbilisi"></span></p>
+    </div>
+    <div class="country">
+        <h3>Germany</h3>
+        <p>Capital: Berlin</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Berlin"></span></p>
+    </div>
+    <div class="country">
+        <h3>Greece</h3>
+        <p>Capital: Athens</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Athens"></span></p>
+    </div>
+    <div class="country">
+        <h3>Hungary</h3>
+        <p>Capital: Budapest</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Budapest"></span></p>
+    </div>
+    <div class="country">
+        <h3>Iceland</h3>
+        <p>Capital: Reykjavik</p>
+        <p>Time: <span class="clock" data-timezone="Atlantic/Reykjavik"></span></p>
+    </div>
+    <div class="country">
+        <h3>Ireland</h3>
+        <p>Capital: Dublin</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Dublin"></span></p>
+    </div>
+    <div class="country">
+        <h3>Italy</h3>
+        <p>Capital: Rome</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Rome"></span></p>
+    </div>
+    <div class="country">
+        <h3>Kosovo</h3>
+        <p>Capital: Pristina</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Belgrade"></span></p>
+    </div>
+    <div class="country">
+        <h3>Latvia</h3>
+        <p>Capital: Riga</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Riga"></span></p>
+    </div>
+    <div class="country">
+        <h3>Lithuania</h3>
+        <p>Capital: Vilnius</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Vilnius"></span></p>
+    </div>
+    <div class="country">
+        <h3>Luxembourg</h3>
+        <p>Capital: Luxembourg City</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Luxembourg"></span></p>
+    </div>
+    <div class="country">
+        <h3>Malta</h3>
+        <p>Capital: Valletta</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Malta"></span></p>
+    </div>
+    <div class="country">
+        <h3>Moldova</h3>
+        <p>Capital: Chisinau</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Chisinau"></span></p>
+    </div>
+    <div class="country">
+        <h3>Monaco</h3>
+        <p>Capital: Monaco</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Monaco"></span></p>
+    </div>
+    <div class="country">
+        <h3>Montenegro</h3>
+        <p>Capital: Podgorica</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Podgorica"></span></p>
+    </div>
+    <div class="country">
+        <h3>Netherlands</h3>
+        <p>Capital: Amsterdam</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Amsterdam"></span></p>
+    </div>
+    <div class="country">
+        <h3>North Macedonia</h3>
+        <p>Capital: Skopje</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Skopje"></span></p>
+    </div>
+    <div class="country">
+        <h3>Norway</h3>
+        <p>Capital: Oslo</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Oslo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Poland</h3>
+        <p>Capital: Warsaw</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Warsaw"></span></p>
+    </div>
+    <div class="country">
+        <h3>Portugal</h3>
+        <p>Capital: Lisbon</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Lisbon"></span></p>
+    </div>
+    <div class="country">
+        <h3>Romania</h3>
+        <p>Capital: Bucharest</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Bucharest"></span></p>
+    </div>
+    <div class="country">
+        <h3>Russia</h3>
+        <p>Capital: Moscow</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Moscow"></span></p>
+    </div>
+    <div class="country">
+        <h3>San Marino</h3>
+        <p>Capital: City of San Marino</p>
+        <p>Time: <span class="clock" data-timezone="Europe/San_Marino"></span></p>
+    </div>
+    <div class="country">
+        <h3>Serbia</h3>
+        <p>Capital: Belgrade</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Belgrade"></span></p>
+    </div>
+    <div class="country">
+        <h3>Slovakia</h3>
+        <p>Capital: Bratislava</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Bratislava"></span></p>
+    </div>
+    <div class="country">
+        <h3>Slovenia</h3>
+        <p>Capital: Ljubljana</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Ljubljana"></span></p>
+    </div>
+    <div class="country">
+        <h3>Spain</h3>
+        <p>Capital: Madrid</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Madrid"></span></p>
+    </div>
+    <div class="country">
+        <h3>Sweden</h3>
+        <p>Capital: Stockholm</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Stockholm"></span></p>
+    </div>
+    <div class="country">
+        <h3>Switzerland</h3>
+        <p>Capital: Bern</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Zurich"></span></p>
+    </div>
+    <div class="country">
+        <h3>Turkey</h3>
+        <p>Capital: Ankara</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Istanbul"></span></p>
+    </div>
+    <div class="country">
+        <h3>Ukraine</h3>
+        <p>Capital: Kyiv</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Kiev"></span></p>
+    </div>
+    <div class="country">
+        <h3>United Kingdom</h3>
+        <p>Capital: London</p>
+        <p>Time: <span class="clock" data-timezone="Europe/London"></span></p>
+    </div>
+    <div class="country">
+        <h3>Vatican City</h3>
+        <p>Capital: Vatican City</p>
+        <p>Time: <span class="clock" data-timezone="Europe/Vatican"></span></p>
+    </div>
+    </div>
+
+    <!-- Australia -->
+    <div class="continent">
+        <h2>Australia</h2>
+        <div class="country">
+        <h3>Australia</h3>
+        <p>Capital: Canberra</p>
+        <p>Time: <span class="clock" data-timezone="Australia/Sydney"></span></p>
+    </div>
+    <div class="country">
+        <h3>Fiji</h3>
+        <p>Capital: Suva</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Fiji"></span></p>
+    </div>
+    <div class="country">
+        <h3>Kiribati</h3>
+        <p>Capital: South Tarawa</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Tarawa"></span></p>
+    </div>
+    <div class="country">
+        <h3>Marshall Islands</h3>
+        <p>Capital: Majuro</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Majuro"></span></p>
+    </div>
+    <div class="country">
+        <h3>Micronesia</h3>
+        <p>Capital: Palikir</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Chuuk"></span></p>
+    </div>
+    <div class="country">
+        <h3>Nauru</h3>
+        <p>Capital: Yaren</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Nauru"></span></p>
+    </div>
+    <div class="country">
+        <h3>New Zealand</h3>
+        <p>Capital: Wellington</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Auckland"></span></p>
+    </div>
+    <div class="country">
+        <h3>Palau</h3>
+        <p>Capital: Ngerulmud</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Palau"></span></p>
+    </div>
+    <div class="country">
+        <h3>Papua New Guinea</h3>
+        <p>Capital: Port Moresby</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Port_Moresby"></span></p>
+    </div>
+    <div class="country">
+        <h3>Samoa</h3>
+        <p>Capital: Apia</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Apia"></span></p>
+    </div>
+    <div class="country">
+        <h3>Solomon Islands</h3>
+        <p>Capital: Honiara</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Honiara"></span></p>
+    </div>
+    <div class="country">
+        <h3>Tonga</h3>
+        <p>Capital: Nuku'alofa</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Tongatapu"></span></p>
+    </div>
+    <div class="country">
+        <h3>Tuvalu</h3>
+        <p>Capital: Funafuti</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Funafuti"></span></p>
+    </div>
+    <div class="country">
+        <h3>Vanuatu</h3>
+        <p>Capital: Port Vila</p>
+        <p>Time: <span class="clock" data-timezone="Pacific/Efate"></span></p>
+    </div>
+    </div>
+
     <!-- North America -->
     <div class="continent">
         <h2>North America</h2>
         <div class="country">
-            <h3>United States</h3>
+            <h3>USA</h3>
             <p>Capital: Washington, D.C.</p>
             <p>Time: <span class="clock" data-timezone="America/New_York"></span></p>
         </div>
-        <div class="country">
-            <h3>Canada</h3>
-            <p>Capital: Ottawa</p>
-            <p>Time: <span class="clock" data-timezone="America/Toronto"></span></p>
-        </div>
-        <div class="country">
-            <h3>Mexico</h3>
-            <p>Capital: Mexico City</p>
-            <p>Time: <span class="clock" data-timezone="America/Mexico_City"></span></p>
-        </div>
-        <div class="country">
-            <h3>Jamaica</h3>
-            <p>Capital: Kingston</p>
-            <p>Time: <span class="clock" data-timezone="America/Jamaica"></span></p>
-        </div>
-        <div class="country">
-            <h3>Cuba</h3>
-            <p>Capital: Havana</p>
-            <p>Time: <span class="clock" data-timezone="America/Havana"></span></p>
-        </div>
-        <div class="country">
-            <h3>Guatemala</h3>
-            <p>Capital: Guatemala City</p>
-            <p>Time: <span class="clock" data-timezone="America/Guatemala"></span></p>
-        </div>
-        <div class="country">
-            <h3>Panama</h3>
-            <p>Capital: Panama City</p>
-            <p>Time: <span class="clock" data-timezone="America/Panama"></span></p>
-        </div>
+         <div class="country">
+        <h3>Canada</h3>
+        <p>Capital: Ottawa</p>
+        <p>Time: <span class="clock" data-timezone="America/Toronto"></span></p>
+    </div>
+    <div class="country">
+        <h3>Mexico</h3>
+        <p>Capital: Mexico City</p>
+        <p>Time: <span class="clock" data-timezone="America/Mexico_City"></span></p>
+    </div>
+    <div class="country">
+        <h3>Guatemala</h3>
+        <p>Capital: Guatemala City</p>
+        <p>Time: <span class="clock" data-timezone="America/Guatemala"></span></p>
+    </div>
+    <div class="country">
+        <h3>Belize</h3>
+        <p>Capital: Belmopan</p>
+        <p>Time: <span class="clock" data-timezone="America/Belize"></span></p>
+    </div>
+    <div class="country">
+        <h3>Honduras</h3>
+        <p>Capital: Tegucigalpa</p>
+        <p>Time: <span class="clock" data-timezone="America/Tegucigalpa"></span></p>
+    </div>
+    <div class="country">
+        <h3>El Salvador</h3>
+        <p>Capital: San Salvador</p>
+        <p>Time: <span class="clock" data-timezone="America/El_Salvador"></span></p>
+    </div>
+    <div class="country">
+        <h3>Nicaragua</h3>
+        <p>Capital: Managua</p>
+        <p>Time: <span class="clock" data-timezone="America/Managua"></span></p>
+    </div>
+    <div class="country">
+        <h3>Costa Rica</h3>
+        <p>Capital: San José</p>
+        <p>Time: <span class="clock" data-timezone="America/Costa_Rica"></span></p>
+    </div>
+    <div class="country">
+        <h3>PANAMA</h3>
+        <p>Capital: Panama City</p>
+        <p>Time: <span class="clock" data-timezone="America/Panama"></span></p>
+    </div>
+    <div class="country">
+        <h3>Cuba</h3>
+        <p>Capital: Havana</p>
+        <p>Time: <span class="clock" data-timezone="America/Havana"></span></p>
+    </div>
+    <div class="country">
+        <h3>Jamaica</h3>
+        <p>Capital: Kingston</p>
+        <p>Time: <span class="clock" data-timezone="America/Jamaica"></span></p>
+    </div>
+    <div class="country">
+        <h3>Haiti</h3>
+        <p>Capital: Port-au-Prince</p>
+        <p>Time: <span class="clock" data-timezone="America/Port-au-Prince"></span></p>
+    </div>
+    <div class="country">
+        <h3>Dominican Republic</h3>
+        <p>Capital: Santo Domingo</p>
+        <p>Time: <span class="clock" data-timezone="America/Santo_Domingo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Trinidad and Tobago</h3>
+        <p>Capital: Port of Spain</p>
+        <p>Time: <span class="clock" data-timezone="America/Port_of_Spain"></span></p>
+    </div>
+    <div class="country">
+        <h3>Barbados</h3>
+        <p>Capital: Bridgetown</p>
+        <p>Time: <span class="clock" data-timezone="America/Barbados"></span></p>
+    </div>
+    <div class="country">
+        <h3>Saint Lucia</h3>
+        <p>Capital: Castries</p>
+        <p>Time: <span class="clock" data-timezone="America/St_Lucia"></span></p>
+    </div>
+    <div class="country">
+        <h3>Saint Vincent and the Grenadines</h3>
+        <p>Capital: Kingstown</p>
+        <p>Time: <span class="clock" data-timezone="America/St_Vincent"></span></p>
+    </div>
+    <div class="country">
+        <h3>Grenada</h3>
+        <p>Capital: St. George's</p>
+        <p>Time: <span class="clock" data-timezone="America/Grenada"></span></p>
+    </div>
+    <div class="country">
+        <h3>Saint Kitts and Nevis</h3>
+        <p>Capital: Basseterre</p>
+        <p>Time: <span class="clock" data-timezone="America/St_Kitts"></span></p>
+    </div>
+    <div class="country">
+        <h3>Antigua and Barbuda</h3>
+        <p>Capital: St. John's</p>
+        <p>Time: <span class="clock" data-timezone="America/Antigua"></span></p>
+    </div>
+    <div class="country">
+        <h3>Saint Barthelemy</h3>
+        <p>Capital: Gustavia</p>
+        <p>Time: <span class="clock" data-timezone="America/Gustavia"></span></p>
+    </div>
     </div>
 
     <!-- South America -->
@@ -253,121 +1059,65 @@
             <p>Time: <span class="clock" data-timezone="America/Sao_Paulo"></span></p>
         </div>
         <div class="country">
-            <h3>Argentina</h3>
-            <p>Capital: Buenos Aires</p>
-            <p>Time: <span class="clock" data-timezone="America/Argentina/Buenos_Aires"></span></p>
-        </div>
-        <div class="country">
-            <h3>Chile</h3>
-            <p>Capital: Santiago</p>
-            <p>Time: <span class="clock" data-timezone="America/Santiago"></span></p>
-        </div>
-        <div class="country">
-            <h3>Colombia</h3>
-            <p>Capital: Bogotá</p>
-            <p>Time: <span class="clock" data-timezone="America/Bogota"></span></p>
-        </div>
-        <div class="country">
-            <h3>Venezuela</h3>
-            <p>Capital: Caracas</p>
-            <p>Time: <span class="clock" data-timezone="America/Caracas"></span></p>
-        </div>
-        <div class="country">
-            <h3>Peru</h3>
-            <p>Capital: Lima</p>
-            <p>Time: <span class="clock" data-timezone="America/Lima"></span></p>
-        </div>
-        <div class="country">
-            <h3>Ecuador</h3>
-            <p>Capital: Quito</p>
-            <p>Time: <span class="clock" data-timezone="America/Guayaquil"></span></p>
-        </div>
+        <h3>Argentina</h3>
+        <p>Capital: Buenos Aires</p>
+        <p>Time: <span class="clock" data-timezone="America/Argentina/Buenos_Aires"></span></p>
     </div>
-
-    <!-- Europe -->
-    <div class="continent">
-        <h2>Europe</h2>
-        <div class="country">
-            <h3>Germany</h3>
-            <p>Capital: Berlin</p>
-            <p>Time: <span class="clock" data-timezone="Europe/Berlin"></span></p>
-        </div>
-        <div class="country">
-            <h3>United Kingdom</h3>
-            <p>Capital: London</p>
-            <p>Time: <span class="clock" data-timezone="Europe/London"></span></p>
-        </div>
-        <div class="country">
-            <h3>France</h3>
-            <p>Capital: Paris</p>
-            <p>Time: <span class="clock" data-timezone="Europe/Paris"></span></p>
-        </div>
-        <div class="country">
-            <h3>Italy</h3>
-            <p>Capital: Rome</p>
-            <p>Time: <span class="clock" data-timezone="Europe/Rome"></span></p>
-        </div>
-        <div class="country">
-            <h3>Spain</h3>
-            <p>Capital: Madrid</p>
-            <p>Time: <span class="clock" data-timezone="Europe/Madrid"></span></p>
-        </div>
-        <div class="country">
-            <h3>Netherlands</h3>
-            <p>Capital: Amsterdam</p>
-            <p>Time: <span class="clock" data-timezone="Europe/Amsterdam"></span></p>
-        </div>
-        <div class="country">
-            <h3>Sweden</h3>
-            <p>Capital: Stockholm</p>
-            <p>Time: <span class="clock" data-timezone="Europe/Stockholm"></span></p>
-        </div>
-        <div class="country">
-    <h3>Ireland</h3>
-    <p>Capital: Dublin</p>
-    <p>Time: <span class="clock" data-timezone="Europe/Dublin"></span></p>
-</div>
-
+    <div class="country">
+        <h3>Bolivia</h3>
+        <p>Capital: Sucre</p>
+        <p>Time: <span class="clock" data-timezone="America/La_Paz"></span></p>
     </div>
-
-    <!-- Australia/Oceania -->
-    <div class="continent">
-        <h2>Australia/Oceania</h2>
-        <div class="country">
-            <h3>Australia</h3>
-            <p>Capital: Canberra</p>
-            <p>Time: <span class="clock" data-timezone="Australia/Sydney"></span></p>
-        </div>
-        <div class="country">
-            <h3>New Zealand</h3>
-            <p>Capital: Wellington</p>
-            <p>Time: <span class="clock" data-timezone="Pacific/Auckland"></span></p>
-        </div>
-        <div class="country">
-            <h3>Fiji</h3>
-            <p>Capital: Suva</p>
-            <p>Time: <span class="clock" data-timezone="Pacific/Fiji"></span></p>
-        </div>
-        <div class="country">
-            <h3>Papua New Guinea</h3>
-            <p>Capital: Port Moresby</p>
-            <p>Time: <span class="clock" data-timezone="Pacific/Port_Moresby"></span></p>
-        </div>
-        <div class="country">
-            <h3>Solomon Islands</h3>
-            <p>Capital: Honiara</p>
-            <p>Time: <span class="clock" data-timezone="Pacific/Guadalcanal"></span></p>
-        </div>
-        <div class="country">
-            <h3>Vanuatu</h3>
-            <p>Capital: Port Vila</p>
-            <p>Time: <span class="clock" data-timezone="Pacific/Efate"></span></p>
-        </div>
-        <div class="country">
-            <h3>Samoa</h3>
-            <p>Capital: Apia</p>
-            <p>Time: <span class="clock" data-timezone="Pacific/Apia"></span></p>
-        </div>
+    <div class="country">
+        <h3>Brazil</h3>
+        <p>Capital: Brasília</p>
+        <p>Time: <span class="clock" data-timezone="America/Sao_Paulo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Chile</h3>
+        <p>Capital: Santiago</p>
+        <p>Time: <span class="clock" data-timezone="America/Santiago"></span></p>
+    </div>
+    <div class="country">
+        <h3>Colombia</h3>
+        <p>Capital: Bogotá</p>
+        <p>Time: <span class="clock" data-timezone="America/Bogota"></span></p>
+    </div>
+    <div class="country">
+        <h3>Ecuador</h3>
+        <p>Capital: Quito</p>
+        <p>Time: <span class="clock" data-timezone="America/Guayaquil"></span></p>
+    </div>
+    <div class="country">
+        <h3>Guyana</h3>
+        <p>Capital: Georgetown</p>
+        <p>Time: <span class="clock" data-timezone="America/Guyana"></span></p>
+    </div>
+    <div class="country">
+        <h3>Paraguay</h3>
+        <p>Capital: Asunción</p>
+        <p>Time: <span class="clock" data-timezone="America/Asuncion"></span></p>
+    </div>
+    <div class="country">
+        <h3>Peru</h3>
+        <p>Capital: Lima</p>
+        <p>Time: <span class="clock" data-timezone="America/Lima"></span></p>
+    </div>
+    <div class="country">
+        <h3>Suriname</h3>
+        <p>Capital: Paramaribo</p>
+        <p>Time: <span class="clock" data-timezone="America/Paramaribo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Uruguay</h3>
+        <p>Capital: Montevideo</p>
+        <p>Time: <span class="clock" data-timezone="America/Montevideo"></span></p>
+    </div>
+    <div class="country">
+        <h3>Venezuela</h3>
+        <p>Capital: Caracas</p>
+        <p>Time: <span class="clock" data-timezone="America/Caracas"></span></p>
+    </div>
     </div>
 
     <footer>
@@ -378,16 +1128,22 @@
     </footer>
 
     <script>
-        function updateClocks() {
+        function updateTimezones() {
             const clocks = document.querySelectorAll('.clock');
             clocks.forEach(clock => {
                 const timezone = clock.getAttribute('data-timezone');
-                const time = new Date().toLocaleTimeString('en-US', { timeZone: timezone });
-                clock.textContent = time;
+                const options = { 
+                    timeZone: timezone,
+                    hour: '2-digit',
+                    minute: '2-digit',
+                    second: '2-digit',
+                    hour12: false
+                };
+                const date = new Date();
+                clock.textContent = date.toLocaleTimeString('en-US', options);
             });
         }
-        setInterval(updateClocks, 1000);
-        updateClocks();
+        setInterval(updateTimezones, 1000);
     </script>
 </body>
 </html>
