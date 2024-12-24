@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Asian Countries with Current Time</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5rem;
+            border-bottom: 5px solid #00796b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .continent {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 2rem;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        .countries {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .country {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .country:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .country h3 {
+            font-size: 1.4rem;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .country p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .time {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All Asian Countries and Their Current Time</h1>
+    </header>
+
+    <div class="container">
+        <div class="continent">
+            <h2>Asia</h2>
+            <div class="countries">
+                <!-- All Asian Countries and their capitals -->
+                <div class="country">
+                    <h3>Afghanistan</h3>
+                    <p>Capital: Kabul</p>
+                    <p class="time" id="afghanistan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Armenia</h3>
+                    <p>Capital: Yerevan</p>
+                    <p class="time" id="armenia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Azerbaijan</h3>
+                    <p>Capital: Baku</p>
+                    <p class="time" id="azerbaijan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Bahrain</h3>
+                    <p>Capital: Manama</p>
+                    <p class="time" id="bahrain">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Bangladesh</h3>
+                    <p>Capital: Dhaka</p>
+                    <p class="time" id="bangladesh">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Bhutan</h3>
+                    <p>Capital: Thimphu</p>
+                    <p class="time" id="bhutan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Brunei</h3>
+                    <p>Capital: Bandar Seri Begawan</p>
+                    <p class="time" id="brunei">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Cambodia</h3>
+                    <p>Capital: Phnom Penh</p>
+                    <p class="time" id="cambodia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>China</h3>
+                    <p>Capital: Beijing</p>
+                    <p class="time" id="china">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Cyprus</h3>
+                    <p>Capital: Nicosia</p>
+                    <p class="time" id="cyprus">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Georgia</h3>
+                    <p>Capital: Tbilisi</p>
+                    <p class="time" id="georgia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>India</h3>
+                    <p>Capital: New Delhi</p>
+                    <p class="time" id="india">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Indonesia</h3>
+                    <p>Capital: Jakarta</p>
+                    <p class="time" id="indonesia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Iran</h3>
+                    <p>Capital: Tehran</p>
+                    <p class="time" id="iran">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Iraq</h3>
+                    <p>Capital: Baghdad</p>
+                    <p class="time" id="iraq">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Israel</h3>
+                    <p>Capital: Jerusalem</p>
+                    <p class="time" id="israel">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Japan</h3>
+                    <p>Capital: Tokyo</p>
+                    <p class="time" id="japan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Jordan</h3>
+                    <p>Capital: Amman</p>
+                    <p class="time" id="jordan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Kazakhstan</h3>
+                    <p>Capital: Nur-Sultan</p>
+                    <p class="time" id="kazakhstan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Kuwait</h3>
+                    <p>Capital: Kuwait City</p>
+                    <p class="time" id="kuwait">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Kyrgyzstan</h3>
+                    <p>Capital: Bishkek</p>
+                    <p class="time" id="kyrgyzstan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Laos</h3>
+                    <p>Capital: Vientiane</p>
+                    <p class="time" id="laos">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Lebanon</h3>
+                    <p>Capital: Beirut</p>
+                    <p class="time" id="lebanon">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Malaysia</h3>
+                    <p>Capital: Kuala Lumpur</p>
+                    <p class="time" id="malaysia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Maldives</h3>
+                    <p>Capital: Malé</p>
+                    <p class="time" id="maldives">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Mongolia</h3>
+                    <p>Capital: Ulaanbaatar</p>
+                    <p class="time" id="mongolia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Myanmar</h3>
+                    <p>Capital: Naypyidaw</p>
+                    <p class="time" id="myanmar">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>North Korea</h3>
+                    <p>Capital: Pyongyang</p>
+                    <p class="time" id="north_korea">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Oman</h3>
+                    <p>Capital: Muscat</p>
+                    <p class="time" id="oman">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Pakistan</h3>
+                    <p>Capital: Islamabad</p>
+                    <p class="time" id="pakistan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Palestine</h3>
+                    <p>Capital: Ramallah</p>
+                    <p class="time" id="palestine">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Philippines</h3>
+                    <p>Capital: Manila</p>
+                    <p class="time" id="philippines">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Qatar</h3>
+                    <p>Capital: Doha</p>
+                    <p class="time" id="qatar">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Russia</h3>
+                    <p>Capital: Moscow</p>
+                    <p class="time" id="russia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Saudi Arabia</h3>
+                    <p>Capital: Riyadh</p>
+                    <p class="time" id="saudi_arabia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Singapore</h3>
+                    <p>Capital: Singapore</p>
+                    <p class="time" id="singapore">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>South Korea</h3>
+                    <p>Capital: Seoul</p>
+                    <p class="time" id="south_korea">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Sri Lanka</h3>
+                    <p>Capital: Colombo</p>
+                    <p class="time" id="sri_lanka">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Syria</h3>
+                    <p>Capital: Damascus</p>
+                    <p class="time" id="syria">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Taiwan</h3>
+                    <p>Capital: Taipei</p>
+                    <p class="time" id="taiwan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Tajikistan</h3>
+                    <p>Capital: Dushanbe</p>
+                    <p class="time" id="tajikistan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Thailand</h3>
+                    <p>Capital: Bangkok</p>
+                    <p class="time" id="thailand">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Timor-Leste</h3>
+                    <p>Capital: Dili</p>
+                    <p class="time" id="timor_leste">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Turkey</h3>
+                    <p>Capital: Ankara</p>
+                    <p class="time" id="turkey">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Turkmenistan</h3>
+                    <p>Capital: Ashgabat</p>
+                    <p class="time" id="turkmenistan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>United Arab Emirates</h3>
+                    <p>Capital: Abu Dhabi</p>
+                    <p class="time" id="united_arab_emirates">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Uzbekistan</h3>
+                    <p>Capital: Tashkent</p>
+                    <p class="time" id="uzbekistan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Vietnam</h3>
+                    <p>Capital: Hanoi</p>
+                    <p class="time" id="vietnam">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Yemen</h3>
+                    <p>Capital: Sana'a</p>
+                    <p class="time" id="yemen">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">Designed and Maintained by 
+            <a href="https://linkedin.com/in/adityabhuyan" target="_blank">
+                Aditya Pratap Bhuyan
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        const countriesTimezones = {
+            "afghanistan": "Asia/Kabul",
+            "armenia": "Asia/Yerevan",
+            "azerbaijan": "Asia/Baku",
+            "bahrain": "Asia/Bahrain",
+            "bangladesh": "Asia/Dhaka",
+            "bhutan": "Asia/Thimphu",
+            "brunei": "Asia/Brunei",
+            "cambodia": "Asia/Phnom_Penh",
+            "china": "Asia/Shanghai",
+            "cyprus": "Asia/Nicosia",
+            "georgia": "Asia/Tbilisi",
+            "india": "Asia/Kolkata",
+            "indonesia": "Asia/Jakarta",
+            "iran": "Asia/Tehran",
+            "iraq": "Asia/Baghdad",
+            "israel": "Asia/Jerusalem",
+            "japan": "Asia/Tokyo",
+            "jordan": "Asia/Amman",
+            "kazakhstan": "Asia/Almaty",
+            "kuwait": "Asia/Kuwait",
+            "kyrgyzstan": "Asia/Bishkek",
+            "laos": "Asia/Vientiane",
+            "lebanon": "Asia/Beirut",
+            "malaysia": "Asia/Kuala_Lumpur",
+            "maldives": "Indian/Maldives",
+            "mongolia": "Asia/Ulaanbaatar",
+            "myanmar": "Asia/Naypyidaw",
+            "north_korea": "Asia/Pyongyang",
+            "oman": "Asia/Muscat",
+            "pakistan": "Asia/Karachi",
+            "palestine": "Asia/Gaza",
+            "philippines": "Asia/Manila",
+            "qatar": "Asia/Qatar",
+            "russia": "Europe/Moscow",
+            "saudi_arabia": "Asia/Riyadh",
+            "singapore": "Asia/Singapore",
+            "south_korea": "Asia/Seoul",
+            "sri_lanka": "Asia/Colombo",
+            "syria": "Asia/Damascus",
+            "taiwan": "Asia/Taipei",
+            "tajikistan": "Asia/Dushanbe",
+            "thailand": "Asia/Bangkok",
+            "timor_leste": "Asia/Dili",
+            "turkey": "Europe/Istanbul",
+            "turkmenistan": "Asia/Ashgabat",
+            "united_arab_emirates": "Asia/Dubai",
+            "uzbekistan": "Asia/Tashkent",
+            "vietnam": "Asia/Hanoi",
+            "yemen": "Asia/Sanaa"
+        };
+
+        function updateTime() {
+            for (let country in countriesTimezones) {
+                const timeZone = countriesTimezones[country];
+                const currentTime = new Date().toLocaleTimeString("en-US", { timeZone: timeZone });
+                const timeElement = document.getElementById(country);
+                if (timeElement) {
+                    timeElement.innerText = currentTime;
+                }
+            }
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime(); // Initial update on page load
+    </script>
+</body>
+</html>
