@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Countries in South America with Current Time</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f8e9;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5rem;
+            border-bottom: 5px solid #00796b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .continent {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 2rem;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        .countries {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .country {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .country:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .country h3 {
+            font-size: 1.4rem;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .country p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .time {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All Countries in South America with Current Time</h1>
+    </header>
+
+    <div class="container">
+        <div class="continent">
+            <h2>South America</h2>
+            <div class="countries">
+                <!-- All South America Countries and their capitals -->
+                <div class="country">
+                    <h3>Argentina</h3>
+                    <p>Capital: Buenos Aires</p>
+                    <p class="time" id="argentina">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Brazil</h3>
+                    <p>Capital: Brasília</p>
+                    <p class="time" id="brazil">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Chile</h3>
+                    <p>Capital: Santiago</p>
+                    <p class="time" id="chile">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Colombia</h3>
+                    <p>Capital: Bogotá</p>
+                    <p class="time" id="colombia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Peru</h3>
+                    <p>Capital: Lima</p>
+                    <p class="time" id="peru">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Venezuela</h3>
+                    <p>Capital: Caracas</p>
+                    <p class="time" id="venezuela">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Paraguay</h3>
+                    <p>Capital: Asunción</p>
+                    <p class="time" id="paraguay">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Uruguay</h3>
+                    <p>Capital: Montevideo</p>
+                    <p class="time" id="uruguay">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Ecuador</h3>
+                    <p>Capital: Quito</p>
+                    <p class="time" id="ecuador">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Bolivia</h3>
+                    <p>Capital: Sucre</p>
+                    <p class="time" id="bolivia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Guyana</h3>
+                    <p>Capital: Georgetown</p>
+                    <p class="time" id="guyana">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Suriname</h3>
+                    <p>Capital: Paramaribo</p>
+                    <p class="time" id="suriname">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>French Guiana</h3>
+                    <p>Capital: Cayenne</p>
+                    <p class="time" id="french_guiana">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">Designed and Maintained by 
+            <a href="https://linkedin.com/in/adityabhuyan" target="_blank">
+                Aditya Pratap Bhuyan
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        const countriesTimezones = {
+            "argentina": "America/Argentina/Buenos_Aires",
+            "brazil": "America/Sao_Paulo",
+            "chile": "America/Santiago",
+            "colombia": "America/Bogota",
+            "peru": "America/Lima",
+            "venezuela": "America/Caracas",
+            "paraguay": "America/Asuncion",
+            "uruguay": "America/Montevideo",
+            "ecuador": "America/Guayaquil",
+            "bolivia": "America/La_Paz",
+            "guyana": "America/Guyana",
+            "suriname": "America/Paramaribo",
+            "french_guiana": "America/Cayenne"
+        };
+
+        function updateTime() {
+            for (let country in countriesTimezones) {
+                const timeZone = countriesTimezones[country];
+                const timeElement = document.getElementById(country);
+                
+                if (timeElement) {
+                    const now = new Date().toLocaleString("en-US", { timeZone: timeZone });
+                    timeElement.textContent = now;
+                }
+            }
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
