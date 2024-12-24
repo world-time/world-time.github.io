@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Countries in North America with Current Time</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5rem;
+            border-bottom: 5px solid #00796b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .continent {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 2rem;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        .countries {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .country {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .country:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .country h3 {
+            font-size: 1.4rem;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .country p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .time {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All Countries in North America with Current Time</h1>
+    </header>
+
+    <div class="container">
+        <div class="continent">
+            <h2>North America</h2>
+            <div class="countries">
+                <!-- All North America Countries and their capitals -->
+                <div class="country">
+                    <h3>Canada</h3>
+                    <p>Capital: Ottawa</p>
+                    <p class="time" id="canada">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>United States</h3>
+                    <p>Capital: Washington, D.C.</p>
+                    <p class="time" id="united_states">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Mexico</h3>
+                    <p>Capital: Mexico City</p>
+                    <p class="time" id="mexico">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Guatemala</h3>
+                    <p>Capital: Guatemala City</p>
+                    <p class="time" id="guatemala">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Belize</h3>
+                    <p>Capital: Belmopan</p>
+                    <p class="time" id="belize">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Honduras</h3>
+                    <p>Capital: Tegucigalpa</p>
+                    <p class="time" id="honduras">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>El Salvador</h3>
+                    <p>Capital: San Salvador</p>
+                    <p class="time" id="el_salvador">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Nicaragua</h3>
+                    <p>Capital: Managua</p>
+                    <p class="time" id="nicaragua">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Costa Rica</h3>
+                    <p>Capital: San José</p>
+                    <p class="time" id="costa_rica">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Panama</h3>
+                    <p>Capital: Panama City</p>
+                    <p class="time" id="panama">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Cuba</h3>
+                    <p>Capital: Havana</p>
+                    <p class="time" id="cuba">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Jamaica</h3>
+                    <p>Capital: Kingston</p>
+                    <p class="time" id="jamaica">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Haiti</h3>
+                    <p>Capital: Port-au-Prince</p>
+                    <p class="time" id="haiti">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Dominican Republic</h3>
+                    <p>Capital: Santo Domingo</p>
+                    <p class="time" id="dominican_republic">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Bahamas</h3>
+                    <p>Capital: Nassau</p>
+                    <p class="time" id="bahamas">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Barbados</h3>
+                    <p>Capital: Bridgetown</p>
+                    <p class="time" id="barbados">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Saint Lucia</h3>
+                    <p>Capital: Castries</p>
+                    <p class="time" id="saint_lucia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Saint Kitts and Nevis</h3>
+                    <p>Capital: Basseterre</p>
+                    <p class="time" id="saint_kitts_and_nevis">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Antigua and Barbuda</h3>
+                    <p>Capital: St. John's</p>
+                    <p class="time" id="antigua_and_barbuda">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Grenada</h3>
+                    <p>Capital: St. George's</p>
+                    <p class="time" id="grenada">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">Designed and Maintained by 
+            <a href="https://linkedin.com/in/adityabhuyan" target="_blank">
+                Aditya Pratap Bhuyan
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        const countriesTimezones = {
+            "canada": "America/Toronto",
+            "united_states": "America/New_York",
+            "mexico": "America/Mexico_City",
+            "guatemala": "America/Guatemala",
+            "belize": "America/Belize",
+            "honduras": "America/Tegucigalpa",
+            "el_salvador": "America/El_Salvador",
+            "nicaragua": "America/Managua",
+            "costa_rica": "America/Costa_Rica",
+            "panama": "America/Panama",
+            "cuba": "America/Havana",
+            "jamaica": "America/Jamaica",
+            "haiti": "America/Port-au-Prince",
+            "dominican_republic": "America/Santo_Domingo",
+            "bahamas": "America/Nassau",
+            "barbados": "America/Barbados",
+            "saint_lucia": "America/St_Lucia",
+            "saint_kitts_and_nevis": "America/Port_of_Spain",
+            "antigua_and_barbuda": "America/Antigua",
+            "grenada": "America/Grenada"
+        };
+
+        function updateTime() {
+            for (let country in countriesTimezones) {
+                const timeZone = countriesTimezones[country];
+                const timeElement = document.getElementById(country);
+                
+                if (timeElement) {
+                    const now = new Date().toLocaleString("en-US", { timeZone: timeZone });
+                    timeElement.textContent = now;
+                }
+            }
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
