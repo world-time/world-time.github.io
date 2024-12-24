@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All African Countries with Current Time</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+
+        header {
+            background-color: #004d40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5rem;
+            border-bottom: 5px solid #00796b;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .continent {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 2rem;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        .countries {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .country {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .country:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .country h3 {
+            font-size: 1.4rem;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .country p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .time {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+            width: 100%;
+            font-size: 1rem;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer-text {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>All African Countries and Their Current Time</h1>
+    </header>
+
+    <div class="container">
+        <div class="continent">
+            <h2>Africa</h2>
+            <div class="countries">
+                <!-- All African Countries and their capitals -->
+                <div class="country">
+                    <h3>Algeria</h3>
+                    <p>Capital: Algiers</p>
+                    <p class="time" id="algeria">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Angola</h3>
+                    <p>Capital: Luanda</p>
+                    <p class="time" id="angola">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Benin</h3>
+                    <p>Capital: Porto-Novo</p>
+                    <p class="time" id="benin">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Botswana</h3>
+                    <p>Capital: Gaborone</p>
+                    <p class="time" id="botswana">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Burkina Faso</h3>
+                    <p>Capital: Ouagadougou</p>
+                    <p class="time" id="burkina_faso">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Burundi</h3>
+                    <p>Capital: Bujumbura</p>
+                    <p class="time" id="burundi">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Cabo Verde</h3>
+                    <p>Capital: Praia</p>
+                    <p class="time" id="cabo_verde">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Cameroon</h3>
+                    <p>Capital: Yaoundé</p>
+                    <p class="time" id="cameroon">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Central African Republic</h3>
+                    <p>Capital: Bangui</p>
+                    <p class="time" id="central_african_republic">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Chad</h3>
+                    <p>Capital: N'Djamena</p>
+                    <p class="time" id="chad">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Comoros</h3>
+                    <p>Capital: Moroni</p>
+                    <p class="time" id="comoros">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Congo (Congo-Brazzaville)</h3>
+                    <p>Capital: Brazzaville</p>
+                    <p class="time" id="congo">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Côte d'Ivoire</h3>
+                    <p>Capital: Yamoussoukro</p>
+                    <p class="time" id="ivory_coast">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Democratic Republic of the Congo</h3>
+                    <p>Capital: Kinshasa</p>
+                    <p class="time" id="democratic_republic_of_the_congo">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Djibouti</h3>
+                    <p>Capital: Djibouti</p>
+                    <p class="time" id="djibouti">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Egypt</h3>
+                    <p>Capital: Cairo</p>
+                    <p class="time" id="egypt">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Equatorial Guinea</h3>
+                    <p>Capital: Malabo</p>
+                    <p class="time" id="equatorial_guinea">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Eritrea</h3>
+                    <p>Capital: Asmara</p>
+                    <p class="time" id="eritrea">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Ethiopia</h3>
+                    <p>Capital: Addis Ababa</p>
+                    <p class="time" id="ethiopia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Gabon</h3>
+                    <p>Capital: Libreville</p>
+                    <p class="time" id="gabon">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>The Gambia</h3>
+                    <p>Capital: Banjul</p>
+                    <p class="time" id="gambia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Ghana</h3>
+                    <p>Capital: Accra</p>
+                    <p class="time" id="ghana">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Guinea</h3>
+                    <p>Capital: Conakry</p>
+                    <p class="time" id="guinea">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Guinea-Bissau</h3>
+                    <p>Capital: Bissau</p>
+                    <p class="time" id="guinea_bissau">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Kenya</h3>
+                    <p>Capital: Nairobi</p>
+                    <p class="time" id="kenya">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Lesotho</h3>
+                    <p>Capital: Maseru</p>
+                    <p class="time" id="lesotho">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Liberia</h3>
+                    <p>Capital: Monrovia</p>
+                    <p class="time" id="liberia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Libya</h3>
+                    <p>Capital: Tripoli</p>
+                    <p class="time" id="libya">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Madagascar</h3>
+                    <p>Capital: Antananarivo</p>
+                    <p class="time" id="madagascar">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Malawi</h3>
+                    <p>Capital: Lilongwe</p>
+                    <p class="time" id="malawi">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Mali</h3>
+                    <p>Capital: Bamako</p>
+                    <p class="time" id="mali">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Mauritania</h3>
+                    <p>Capital: Nouakchott</p>
+                    <p class="time" id="mauritania">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Mauritius</h3>
+                    <p>Capital: Port Louis</p>
+                    <p class="time" id="mauritius">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Morocco</h3>
+                    <p>Capital: Rabat</p>
+                    <p class="time" id="morocco">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Mozambique</h3>
+                    <p>Capital: Maputo</p>
+                    <p class="time" id="mozambique">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Namibia</h3>
+                    <p>Capital: Windhoek</p>
+                    <p class="time" id="namibia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Niger</h3>
+                    <p>Capital: Niamey</p>
+                    <p class="time" id="niger">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Nigeria</h3>
+                    <p>Capital: Abuja</p>
+                    <p class="time" id="nigeria">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Rwanda</h3>
+                    <p>Capital: Kigali</p>
+                    <p class="time" id="rwanda">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Sao Tome and Principe</h3>
+                    <p>Capital: São Tomé</p>
+                    <p class="time" id="sao_tome">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Senegal</h3>
+                    <p>Capital: Dakar</p>
+                    <p class="time" id="senegal">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Seychelles</h3>
+                    <p>Capital: Victoria</p>
+                    <p class="time" id="seychelles">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Sierra Leone</h3>
+                    <p>Capital: Freetown</p>
+                    <p class="time" id="sierra_leone">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Somalia</h3>
+                    <p>Capital: Mogadishu</p>
+                    <p class="time" id="somalia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>South Africa</h3>
+                    <p>Capital: Pretoria</p>
+                    <p class="time" id="south_africa">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>South Sudan</h3>
+                    <p>Capital: Juba</p>
+                    <p class="time" id="south_sudan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Sudan</h3>
+                    <p>Capital: Khartoum</p>
+                    <p class="time" id="sudan">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Togo</h3>
+                    <p>Capital: Lomé</p>
+                    <p class="time" id="togo">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Tunisia</h3>
+                    <p>Capital: Tunis</p>
+                    <p class="time" id="tunisia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Uganda</h3>
+                    <p>Capital: Kampala</p>
+                    <p class="time" id="uganda">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Zambia</h3>
+                    <p>Capital: Lusaka</p>
+                    <p class="time" id="zambia">Loading...</p>
+                </div>
+                <div class="country">
+                    <h3>Zimbabwe</h3>
+                    <p>Capital: Harare</p>
+                    <p class="time" id="zimbabwe">Loading...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer-text">Designed and Maintained by 
+            <a href="https://linkedin.com/in/adityabhuyan" target="_blank">
+                Aditya Pratap Bhuyan
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        const countriesTimezones = {
+            "algeria": "Africa/Algiers",
+            "angola": "Africa/Luanda",
+            "benin": "Africa/Porto-Novo",
+            "botswana": "Africa/Gaborone",
+            "burkina_faso": "Africa/Ouagadougou",
+            "burundi": "Africa/Bujumbura",
+            "cabo_verde": "Atlantic/Cape_Verde",
+            "cameroon": "Africa/Douala",
+            "central_african_republic": "Africa/Bangui",
+            "chad": "Africa/Ndjamena",
+            "comoros": "Indian/Comoro",
+            "congo": "Africa/Brazzaville",
+            "ivory_coast": "Africa/Abidjan",
+            "democratic_republic_of_the_congo": "Africa/Kinshasa",
+            "djibouti": "Africa/Djibouti",
+            "egypt": "Africa/Cairo",
+            "equatorial_guinea": "Africa/Malabo",
+            "eritrea": "Africa/Asmara",
+            "ethiopia": "Africa/Addis_Ababa",
+            "gabon": "Africa/Libreville",
+            "gambia": "Africa/Banjul",
+            "ghana": "Africa/Accra",
+            "guinea": "Africa/Conakry",
+            "guinea_bissau": "Africa/Bissau",
+            "kenya": "Africa/Nairobi",
+            "lesotho": "Africa/Maseru",
+            "liberia": "Africa/Monrovia",
+            "libya": "Africa/Tripoli",
+            "madagascar": "Indian/Antananarivo",
+            "malawi": "Africa/Blantyre",
+            "mali": "Africa/Bamako",
+            "mauritania": "Africa/Nouakchott",
+            "mauritius": "Indian/Mauritius",
+            "morocco": "Africa/Casablanca",
+            "mozambique": "Africa/Maputo",
+            "namibia": "Africa/Windhoek",
+            "niger": "Africa/Niamey",
+            "nigeria": "Africa/Lagos",
+            "rwanda": "Africa/Kigali",
+            "sao_tome": "Africa/Sao_Tome",
+            "senegal": "Africa/Dakar",
+            "seychelles": "Indian/Mahe",
+            "sierra_leone": "Africa/Freetown",
+            "somalia": "Africa/Mogadishu",
+            "south_africa": "Africa/Johannesburg",
+            "south_sudan": "Africa/Juba",
+            "sudan": "Africa/Khartoum",
+            "togo": "Africa/Lome",
+            "tunisia": "Africa/Tunis",
+            "uganda": "Africa/Kampala",
+            "zambia": "Africa/Lusaka",
+            "zimbabwe": "Africa/Harare"
+        };
+
+        function updateTime() {
+            for (let country in countriesTimezones) {
+                const timeZone = countriesTimezones[country];
+                const timeElement = document.getElementById(country);
+                
+                if (timeElement) {
+                    const now = new Date().toLocaleString("en-US", { timeZone: timeZone });
+                    timeElement.textContent = now;
+                }
+            }
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
